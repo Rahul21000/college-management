@@ -1,0 +1,190 @@
+
+<!-- saved from url=(0037)http://localhost/project/register.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tbody><tr><th align="left" bgcolor="#f57900" colspan="5"><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\wamp64\www\project\db.php on line <i>2</i></th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr><th align="center" bgcolor="#eeeeec">#</th><th align="left" bgcolor="#eeeeec">Time</th><th align="left" bgcolor="#eeeeec">Memory</th><th align="left" bgcolor="#eeeeec">Function</th><th align="left" bgcolor="#eeeeec">Location</th></tr>
+<tr><td bgcolor="#eeeeec" align="center">1</td><td bgcolor="#eeeeec" align="center">0.0004</td><td bgcolor="#eeeeec" align="right">362632</td><td bgcolor="#eeeeec">{main}(  )</td><td title="C:\wamp64\www\project\register.php" bgcolor="#eeeeec">...\register.php<b>:</b>0</td></tr>
+<tr><td bgcolor="#eeeeec" align="center">2</td><td bgcolor="#eeeeec" align="center">0.0004</td><td bgcolor="#eeeeec" align="right">362920</td><td bgcolor="#eeeeec">require( <font color="#00bb00">'C:\wamp64\www\project\db.php</font> )</td><td title="C:\wamp64\www\project\register.php" bgcolor="#eeeeec">...\register.php<b>:</b>2</td></tr>
+<tr><td bgcolor="#eeeeec" align="center">3</td><td bgcolor="#eeeeec" align="center">0.0004</td><td bgcolor="#eeeeec" align="right">362920</td><td bgcolor="#eeeeec"><a href="http://www.php.net/function.mysqli-connect" target="_new">mysqli_connect</a>( <span>$host = </span><span>'localhost'</span>, <span>$user = </span><span>'root'</span>, <span>$password = </span><span>''</span>, <span>$database = </span><span>'jiwaji'</span> )</td><td title="C:\wamp64\www\project\db.php" bgcolor="#eeeeec">...\db.php<b>:</b>2</td></tr>
+</tbody></table></font>
+
+
+
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Register - jiwaji management</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="http://localhost/project/assets/image/logo.png" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com/" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./Register - jiwaji management_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./Register - jiwaji management_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="./Register - jiwaji management_files/boxicons.min.css" rel="stylesheet">
+  <link href="./Register - jiwaji management_files/quill.snow.css" rel="stylesheet">
+  <link href="./Register - jiwaji management_files/quill.bubble.css" rel="stylesheet">
+  <link href="./Register - jiwaji management_files/remixicon.css" rel="stylesheet">
+  <link href="./Register - jiwaji management_files/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="./Register - jiwaji management_files/style(1).css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.4.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+
+
+  <main>
+    <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center " style="width:100%;&gt;
+        &lt;div class=" container"="">
+          <div class="row justify-content-center">
+            <div class="col-xl-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="d-flex justify-content-center py-4">
+                <a href="http://localhost/project/index.php" class="logo d-flex align-items-center w-auto">
+                  <img src="./Register - jiwaji management_files/logo.png" alt="">
+                  <span class="d-none d-lg-block">jiwaji management</span>
+                </a>
+              </div><!-- End Logo -->
+
+              <div class="card mb-3" style="width:100%;">
+
+                <div class="card-body ">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
+                    <p class="text-center small">Enter your personal details to create account</p>
+                  </div>
+
+                  <form class="row g-3 needs-validation" novalidate="" method="POST">
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Name</label>
+                      <input type="text" name="name" class="form-control" id="yourName" required="">
+                      <div class="invalid-feedback">Please, enter your name!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Last</label>
+                      <input type="text" name="lastname" class="form-control" id="yourName" required="">
+                      <div class="invalid-feedback">Please, enter your last!</div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="yourFather" class="form-label">Father</label>
+                      <input type="text" name="father" class="form-control" id="yourFather" required="">
+                      <div class="invalid-feedback">Please, enter your father!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="yourFather" class="form-label">Last</label>
+                      <input type="text" name="flastname" class="form-control" id="yourFather" required="">
+                      <div class="invalid-feedback">Please, enter father last name!</div>
+                    </div>
+                    <!-- <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
+                     <label class="form-check-label" for="inlineRadio1">Male</label>
+                   </div>
+                   <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female">
+                     <label class="form-check-label" for="inlineRadio2">Female</label>
+                   </div> -->
+                   
+                    <div class="col-12">
+                      <label for="yourEmail" class="form-label">Your Email</label>
+                      <input type="Email" name="email" class="form-control" id="yourEmail" required="">
+                      <div class="invalid-feedback">Please, enter a valid Email adddress!</div>
+                    </div>
+
+
+
+                    <div class="col-12">
+                      <label for="youMobile" class="form-label">Your Mobile</label>
+                      <input type="text" name="mobile" class="form-control" id="yourMobile" required="">
+                      <div class="invalid-feedback">Please enter mobile number!</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourUsername" class="form-label" title="! enter application no. or role no.">Username</label>
+                      <div class="input-group has-validation">
+                       
+                        <input type="text" name="user_id" class="form-control" id="yourUsername" required="">
+                        <div class="invalid-feedback">Please choose a username.</div>
+                        <div class="alert alert-primary sm">username should be application no. or role no.</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required="">
+                      <div class="invalid-feedback">Please enter your password!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Confirm password</label>
+                      <input type="password" name="cpassword" class="form-control" id="yourPassword" required="">
+                      <div class="invalid-feedback">Please enter your confirm password!</div>
+                    </div>
+
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required="">
+                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="http://localhost/project/register.php#">terms and conditions</a></label>
+                        <div class="invalid-feedback">You must agree before submitting.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit" name="submit">Create Account</button>
+                    </div>
+                    <div class="col-12">
+                      <p class="small mb-0">Already have an account? <a href="http://localhost/project/login.php">Login</a></p>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </section></div>
+
+      
+
+    
+  </main><!-- End #main -->
+
+  <a href="http://localhost/project/register.php#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./Register - jiwaji management_files/apexcharts.min.js.download"></script>
+  <script src="./Register - jiwaji management_files/bootstrap.bundle.min.js.download"></script>
+  <script src="./Register - jiwaji management_files/chart.min.js.download"></script>
+  <script src="./Register - jiwaji management_files/echarts.min.js.download"></script>
+  <script src="./Register - jiwaji management_files/quill.min.js.download"></script>
+  <script src="./Register - jiwaji management_files/simple-datatables.js.download"></script>
+  <script src="./Register - jiwaji management_files/tinymce.min.js.download"></script>
+  <script src="./Register - jiwaji management_files/validate.js.download"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./Register - jiwaji management_files/main.js.download"></script>
+
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Register - jiwaji management_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body></html>
